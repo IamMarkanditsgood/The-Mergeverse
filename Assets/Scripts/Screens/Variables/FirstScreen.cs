@@ -29,15 +29,7 @@ public class FirstScreen : BasicScreen
 
     private void ScreenGame()
     {
-        if(PlayerPrefs.GetInt("FirstGame") == 1)
-        {
-            UIManager.Instance.ShowScreen(ScreenTypes.Game);
-            gameManager.StartGame();
-        }
-        else
-        {
-            UIManager.Instance.ShowScreen(ScreenTypes.Onbording);
-        }
-       
+        UIManager.Instance.ShowScreen(ScreenTypes.Game);
+        gameManager.StartGame();
     }
 }
