@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird 3
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 278c7e8ee9cbc704b81910e315632ebb, type: 3}
+  Name: Mina. I used to dance
+  Description: "Before everything collapsed, I was a dancer. Not famous \u2014 not
+    even professional. But when I moved, people smiled. I danced in parks, on street
+    corners, sometimes just for stray cats. When the world turned quiet, I stopped.
+    Not because I couldn\u2019t. But because there was no one left to watch. I lived
+    in an old theater for a long time. The stageboards creaked, but I knew every
+    one. I swept the dust, lit candles, and played music from memory. My feet remembered
+    even when my heart didn\u2019t. Then one day, someone left a note at the entrance.
+    Just a scrap of paper: \u201CWe saw your light. We\u2019re nearby.\u201D I waited.
+    Then I danced again \u2014 just once \u2014 in the open. And someone clapped.
+    Now I\u2019m in your plane. My shoes are worn through. But my soul? It remembers
+    rhythm. And this flight? It feels like a standing ovation. "

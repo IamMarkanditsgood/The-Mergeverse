@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird 8
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 0e0037356bfe45d4f9d08e8f368a5179, type: 3}
+  Name: Kemi. I mapped the ruins
+  Description: "After the fall, I became a cartographer without a country. The old
+    maps were useless \u2014 cities erased, rivers blocked, whole highways swallowed
+    by forests. So I started over. I made my own. Drew each collapsed bridge, each
+    passable tunnel, each place that smelled like danger. I used scraps of paper,
+    charcoal, and memory. I left copies hidden in hollow trees. Marked safe wells.
+    Warned of raiders. I never knew if anyone used them. But I imagined a hand, one
+    day, unfolding a map I made \u2014 and choosing the safer road. When I found
+    your signal, I marked it too. \u201CPossible hope,\u201D I wrote. Now I\u2019m
+    flying over everything I mapped, watching it shrink beneath the clouds. I don\u2019t
+    need to draw this part. You brought me beyond the edge of my world. "

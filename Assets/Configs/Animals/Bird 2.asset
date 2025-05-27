@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird 2
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 9419b83155155064c9f7dc29c0687682, type: 3}
+  Name: "Tom\xE1\u0161. The silence saved me"
+  Description: "I worked in an observatory. Far from the cities. Just me, the stars,
+    and machines that hummed gently all night. I used to think the silence would
+    drive me mad. But in the end, it saved my life. I saw it all through a telescope.
+    Fires. Panic. Darkness spreading like a storm. I locked the gates. Turned off
+    the outside lights. And waited. Weeks passed. Then months. The stars became my
+    only clock. When I ran out of food, I climbed down the mountain. Everything was
+    gone. People. Roads. Maps. But the stars \u2014 they were still there. Watching.
+    I followed the skies, just like I used to guide ships across them. That\u2019s
+    how I found your signal. That\u2019s how I found you. Now I sit in this plane
+    and still can\u2019t tell if I\u2019m dreaming. But I see a constellation through
+    the window \u2014 and I know I\u2019m on the right path "

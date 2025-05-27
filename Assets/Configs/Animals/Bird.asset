@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 75f4b17c59e139a439de385fc287bb63, type: 3}
+  Name: Rafael. I used to fix cars
+  Description: "I was a mechanic. Not a fancy one \u2014 just a guy with a garage,
+    a toolbox, and enough coffee to get through another busted carburetor. People
+    trusted me because I listened. And because I never overcharged them. When the
+    world fell apart, cars stopped running. Roads cracked, cities collapsed. But
+    engines\u2026 engines I understood. So I stayed. I kept fixing whatever I could
+    \u2014 generators, radios, wheels on carts. I didn\u2019t care if it ran on gas
+    or hope. One day a stranger limped into the village dragging a broken bike. I
+    fixed it. He told me about you \u2014 about planes, evacuations, survival. And
+    for the first time in years, I thought: maybe it\u2019s not too late for me either.
+    Now I\u2019m on your plane. Looking at the bolts, the rivets, the wear in the
+    metal. This thing flies because someone believed it could. And maybe that\u2019s
+    all I needed too. Thanks for fixing more than just machines. "

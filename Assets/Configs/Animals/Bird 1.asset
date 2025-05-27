@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
+  m_Name: Bird 1
+  m_EditorClassIdentifier: 
+  image: {fileID: 21300000, guid: 6b18f706e6883fd41b7ae06cdd88c85e, type: 3}
+  Name: Lena. I never meant to be alone
+  Description: "I was supposed to be on vacation when it all started. Just a week
+    in the mountains. No phone. No news. Just snow and silence. When I came down\u2026
+    there was nothing. Roads were blocked. Gas stations were empty. I hiked for days
+    before I saw the first ruins of a town. And then I knew \u2014 whatever had happened,
+    it wasn\u2019t over. I stayed in a ranger\u2019s tower for months. Learned to
+    grow food in buckets. Talked to myself. Named the squirrels. I told myself someone
+    would come. But the truth is, I stopped believing that after the first winter.
+    Then one day, I heard the drone of an engine. Not like a car. Not like anything
+    I\u2019d heard in years. I climbed the tower roof and lit a signal fire \u2014
+    and now I\u2019m here. In the sky again. Looking down at the places that forgot
+    me. Thank you\u2026 for not forgetting. "
