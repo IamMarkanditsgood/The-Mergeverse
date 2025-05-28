@@ -16,7 +16,6 @@ public class GameManager : MonoBehaviour
     [Header("UI")]
     [SerializeField] private TMP_Text timerText;
     [SerializeField] private TMP_Text coinText;
-    [SerializeField] private TMP_Text incomeText;
 
     private HashSet<int> unlockedLevels = new();
     [SerializeField] private Sprite[] chickenSprites;
@@ -88,7 +87,7 @@ public class GameManager : MonoBehaviour
 
     private void HandleIncome()
     {
-        incomeTimer += Time.deltaTime;
+       /* incomeTimer += Time.deltaTime;
 
         if (incomeTimer >= incomeInterval)
         {
@@ -104,7 +103,7 @@ public class GameManager : MonoBehaviour
             PlayerPrefs.SetInt("Coins", coins);
             UpdateCoinText();
             UpdateIncomeText(); // <== Оновлюємо прибуток у UI
-        }
+        }*/
     }
 
     private IEnumerator AutoSpawnChicken()
@@ -132,7 +131,7 @@ public class GameManager : MonoBehaviour
         if (!unlockedLevels.Contains(level))
         {
             unlockedLevels.Add(level);
-            if(level != 1 && level != 11)
+            if(level != 1 && level != 10)
             {
                 NewChickenPopup newChickenPopup = (NewChickenPopup) UIManager.Instance.GetPopup(PopupTypes.NewChicken);
                 newChickenPopup.Init(level);
@@ -144,10 +143,18 @@ public class GameManager : MonoBehaviour
         {
             PlayerPrefs.SetInt("Achieve0", 1);
         }
-        if (level == 11)
+        if (level == 10)    
         {
+            RemoveChicken(merge);
             Destroy(newChicken);
             UIManager.Instance.ShowPopup(PopupTypes.MaxChickecn);
+
+            coins = PlayerPrefs.GetInt("Coins");
+            coins++;
+            PlayerPrefs.SetInt("Coins", coins);
+            GameEvents.NewCoins(coins);
+
+
             PlayerPrefs.SetInt("Achieve1", 1);
             PlayerPrefs.SetInt("Achieve2", 1);
             PlayerPrefs.SetInt("Achieve3", 1);
@@ -157,7 +164,7 @@ public class GameManager : MonoBehaviour
             {
                 PlayerPrefs.SetInt("Achieve4", 1);
             }
-            for (int i = 0; i < 10; i++)
+           /* for (int i = 0; i < 10; i++)
             {
                 string key = "Story" + i;
                 if (!PlayerPrefs.HasKey(key))
@@ -165,7 +172,7 @@ public class GameManager : MonoBehaviour
                     PlayerPrefs.SetInt(key, 1);
                     return;
                 }
-            }
+            }*/
         }
     }
 
@@ -176,8 +183,8 @@ public class GameManager : MonoBehaviour
 
     public void AddCoins(int amount)
     {
-        coins += amount;
-        UpdateCoinText();
+        /*coins += amount;
+        UpdateCoinText();*/
     }
 
     private void UpdateCoinText()

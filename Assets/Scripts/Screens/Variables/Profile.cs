@@ -12,6 +12,7 @@ public class Profile : BasicScreen
     public Button i;
     public Button avatar;
     public TMP_Text timeToHome;
+    public TMP_Text coins;
     private TextManager textManager = new TextManager();
     public AvatarManager avatarManager;
     public TMP_InputField name;
@@ -20,18 +21,16 @@ public class Profile : BasicScreen
     public Sprite[] openedAchievements;
 
 
-    [SerializeField] private TMP_Text displayText; // посилання на UI Text
-
-    private const string FirstLaunchKey = "FirstLaunchDate";
-
     void Start()
     {
+        textManager.SetText(PlayerPrefs.GetInt("Coins"), coins, true);
         textManager.SetText("10", timeToHome);
         s.onClick.AddListener(Shop);
         H.onClick.AddListener(Home);
         i.onClick.AddListener(Info);
         avatar.onClick.AddListener(Avatar);
 
+        GameEvents.OnNewCoins += UpdateCoins;
         GameEvents.OnNewTime += UdpateTimer;
     }
 
@@ -43,9 +42,13 @@ public class Profile : BasicScreen
         i.onClick.RemoveListener(Info);
         avatar.onClick.RemoveListener(Avatar);
 
+        GameEvents.OnNewCoins -= UpdateCoins;
         GameEvents.OnNewTime -= UdpateTimer;
     }
-
+    public void UpdateCoins(int Coins)
+    {
+        textManager.SetText(Coins, coins, true);
+    }
     private void OnApplicationQuit()
     {
         PlayerPrefs.SetString("Name", name.text);
@@ -56,7 +59,6 @@ public class Profile : BasicScreen
 
         avatarManager.SetSavedPicture();
         name.text = PlayerPrefs.GetString("Name", "USER_NAME");
-        SetTimer();
         SetAchievements();
     }
 
@@ -70,19 +72,7 @@ public class Profile : BasicScreen
     { 
     }
 
-    private void SetTimer()
-    {
-        string savedDate = PlayerPrefs.GetString(FirstLaunchKey, "");
 
-        if (string.IsNullOrEmpty(savedDate))
-        {
-            savedDate = DateTime.Now.ToString("dd.MM.yyyy");
-            PlayerPrefs.SetString(FirstLaunchKey, savedDate);
-            PlayerPrefs.Save();
-        }
-
-        displayText.text = $"In the game\nsince {savedDate}";
-    }
 
     private void SetAchievements()
     {

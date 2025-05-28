@@ -10,7 +10,8 @@ public class AnimalInfo : BasicScreen
 
     public Image bg;
     public TMP_Text name;
-    public TMP_Text description;
+    public TMP_Text ingradiemts;
+    public TMP_Text instruction;
     public Button _back;
 
     private void Start()
@@ -37,7 +38,8 @@ public class AnimalInfo : BasicScreen
     {
         bg.sprite = config.image;
         name.text = config.Name;
-        description.text = config.Description;
+        ingradiemts.text = config.Ingredients;
+        instruction.text = config.Instructions;
     }
 
     private void Close()

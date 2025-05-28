@@ -12,16 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
   m_Name: Bird 3
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 278c7e8ee9cbc704b81910e315632ebb, type: 3}
-  Name: Mina. I used to dance
-  Description: "Before everything collapsed, I was a dancer. Not famous \u2014 not
-    even professional. But when I moved, people smiled. I danced in parks, on street
-    corners, sometimes just for stray cats. When the world turned quiet, I stopped.
-    Not because I couldn\u2019t. But because there was no one left to watch. I lived
-    in an old theater for a long time. The stageboards creaked, but I knew every
-    one. I swept the dust, lit candles, and played music from memory. My feet remembered
-    even when my heart didn\u2019t. Then one day, someone left a note at the entrance.
-    Just a scrap of paper: \u201CWe saw your light. We\u2019re nearby.\u201D I waited.
-    Then I danced again \u2014 just once \u2014 in the open. And someone clapped.
-    Now I\u2019m in your plane. My shoes are worn through. But my soul? It remembers
-    rhythm. And this flight? It feels like a standing ovation. "
+  image: {fileID: 21300000, guid: 326252a69cd5d274bb43a30d2a7f755f, type: 3}
+  Name: Pineapple Glow Shake
+  Ingredients: "3 slices of fresh or frozen pineapple \L1 ripe banana \L1/2 cup coconut
+    milk \L1 tbsp rolled oats \LIce cubes (optional) "
+  Instructions: Place all ingredients in a blender and blend until smooth. Serve
+    in a tall glass with a sprinkle of coconut flakes or a pineapple wedge.

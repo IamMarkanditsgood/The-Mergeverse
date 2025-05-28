@@ -12,17 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
   m_Name: Bird 4
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 7470ecab9c605394ba6e909d18ff0ca1, type: 3}
-  Name: Abel. I planted anyway
-  Description: "I wasn\u2019t a farmer. I was a math teacher. But when the stores
-    ran out and the city emptied, numbers didn\u2019t feed me. Seeds did. I found
-    an old gardening book in a school library. Tore pages, made notes, learned what
-    \u201Cloam\u201D meant. I started with one tomato plant in a plastic tub. Then
-    potatoes. Then carrots. The world outside was grey and rotting, but my little
-    rooftop garden \u2014 it was green. A rebellion in color. I watered it with melted
-    snow. I defended it from birds. I whispered to it like students before a test.
-    Then I heard your message \u2014 a crackling voice offering rescue. I didn\u2019t
-    believe it. But I packed seeds anyway. Just in case. Now I\u2019m airborne. I
-    look out the window and imagine soil again. Imagine feeding people. Teaching
-    them that growth is still possible. Thank you for giving me land again \u2014
-    even if it flies. "
+  image: {fileID: 21300000, guid: 21c73c12965f26a44ad14fe2fff4bb99, type: 3}
+  Name: Mango Jelly Float
+  Ingredients: "1/2 ripe mango, chopped \L1/2 cup mango juice \L1 tbsp chia seeds
+    \L1/2 cup chilled coconut water "
+  Instructions: Soak chia seeds in the coconut water for 10 minutes. In a glass,
+    layer the mango chunks and chia-coconut mixture. Pour mango juice over the top.
+    Chill before serving and stir gently before drinking.

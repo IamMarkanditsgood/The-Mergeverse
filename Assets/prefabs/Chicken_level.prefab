@@ -147,16 +147,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelSprites:
-  - {fileID: 21300000, guid: 5797c01d09a04644aa7da904b204b71c, type: 3}
-  - {fileID: 21300000, guid: 33dc78f7ad1065b48834922704d875b0, type: 3}
-  - {fileID: 21300000, guid: 3865486cb76812c47ad289e121b5c60c, type: 3}
-  - {fileID: 21300000, guid: 74e10da0865318843ae0ebcbcfaaf4f6, type: 3}
-  - {fileID: 21300000, guid: d12ab453264546d47b879965ce5b531c, type: 3}
-  - {fileID: 21300000, guid: e343b9eee89300e43b5e6f5f6ec6a57f, type: 3}
-  - {fileID: 21300000, guid: ac78030355c537b40a20e08e027b4ae4, type: 3}
-  - {fileID: 21300000, guid: 36f4ee7d70a14bb42b40b1c967bdce1d, type: 3}
-  - {fileID: 21300000, guid: 48cfd409c96444e4ca3e2acb2e41f3c8, type: 3}
-  - {fileID: 21300000, guid: 33affaaa42ec98c4c93616232531ab9e, type: 3}
-  - {fileID: 21300000, guid: 556f8c1349d47054ba1f7eea7acc0b46, type: 3}
+  - {fileID: 21300000, guid: 59a10fc34d316a244bb41813be31a525, type: 3}
+  - {fileID: 21300000, guid: 62abbb6efaabe7f47a7a740db13da731, type: 3}
+  - {fileID: 21300000, guid: 15786536a842fc3428006142825312dc, type: 3}
+  - {fileID: 21300000, guid: e1884be0518ff624ba652105ce73a7ce, type: 3}
+  - {fileID: 21300000, guid: 07f0daff3ff441b4385c8ec503499880, type: 3}
+  - {fileID: 21300000, guid: f1ef2e112db86744788fda6192f1f236, type: 3}
+  - {fileID: 21300000, guid: a5cebe5e26c37fe46be281d337a4ff98, type: 3}
+  - {fileID: 21300000, guid: 128465ce20657b348b4b2997d9bd2e0c, type: 3}
+  - {fileID: 21300000, guid: 407b706a092f2ed458320d76b0d63cfb, type: 3}
+  - {fileID: 21300000, guid: d9531f114f34a254c9bc8836cfa7e45e, type: 3}
   profitPerSecond: 1
-  profitPerLevel: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  profitPerLevel: 00000000000000000000000000000000000000000000000000000000000000000000000000000000

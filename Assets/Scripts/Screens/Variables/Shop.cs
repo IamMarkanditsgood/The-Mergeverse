@@ -9,27 +9,34 @@ public class Shop : BasicScreen
     public Button p;
     public Button H;
 
+    public TMP_Text coins;
     public TMP_Text timeToHome;
     private TextManager textManager = new TextManager();
 
     public BirdConfig[] birdConfigs;
+    public Button[] buy;
     public Button[] read;
+    public int[] prices;
 
     void Start()
     {
-        string key = "Story" + 0;
-        PlayerPrefs.SetInt(key, 1);
+        textManager.SetText(PlayerPrefs.GetInt("Coins"), coins, true);
         textManager.SetText("10", timeToHome);
         p.onClick.AddListener(Profile);
         H.onClick.AddListener(Home);
 
-
+        GameEvents.OnNewCoins += UpdateCoins;
         GameEvents.OnNewTime += UdpateTimer;
 
         for(int i = 0; i < read.Length; i++)
         {
             int index = i;
             read[index].onClick.AddListener(() => Read(index));
+        }
+        for (int i = 0; i < buy.Length; i++)
+        {
+            int index = i;
+            buy[index].onClick.AddListener(() => Buy(index));
         }
     }
 
@@ -38,22 +45,28 @@ public class Shop : BasicScreen
     {
         p.onClick.RemoveListener(Profile);
         H.onClick.RemoveListener(Home);
+
+        GameEvents.OnNewCoins -= UpdateCoins;
         GameEvents.OnNewTime -= UdpateTimer;
+
         for (int i = 0; i < read.Length; i++)
         {
             int index = i;
             read[index].onClick.RemoveListener(() => Read(index));
         }
-    }
+        for (int i = 0; i < buy.Length; i++)
+        {
+            int index = i;
+            buy[index].onClick.RemoveListener(() => Buy(index));
+        }
 
+    }
+    public void UpdateCoins(int Coins)
+    {
+        textManager.SetText(Coins, coins, true);
+    }
     public override void SetScreen()
     {
-        read[0].interactable = true;
-        for (int i = 1; i < read.Length; i++)
-        {
-            Debug.Log(i);
-            read[i].interactable = false;
-        }
 
 
         SetButtons();
@@ -61,19 +74,47 @@ public class Shop : BasicScreen
 
     private void SetButtons()
     {
-        for(int i = 1; i < read.Length; i++)
+        for(int i = 0; i < read.Length; i++)
+        {
+            read[i].gameObject.SetActive(false);
+            buy[i].gameObject.SetActive(true);
+        }
+
+        for(int i = 0; i < read.Length; i++)
         {
             string key = "Story" + i;
-            if(PlayerPrefs.HasKey(key))
+            if(PlayerPrefs.GetInt(key) == 1)
             {
                 Debug.Log(key);
-                read[i].interactable = true;
+                read[i].gameObject.SetActive(true);
+                buy[i].gameObject.SetActive(false);
             }
         }
     }
+    private void Buy(int index)
+    {
+        int coins = PlayerPrefs.GetInt("Coins");
+        if (coins >= prices[index])
+        {
+            Debug.Log("Good");
+            coins -= prices[index];
+            PlayerPrefs.SetInt("Coins", coins);
+            GameEvents.NewCoins(coins);
+            string key = "Story" + index;
+            if (!PlayerPrefs.HasKey(key))
+            {
+                Debug.Log(key);
+                PlayerPrefs.SetInt(key, 1);
+            }
+            SetButtons();
+        }
+
+        
+    }
+
     private void Read(int index)
     {
-        AnimalInfo animalInfo = (AnimalInfo) UIManager.Instance.GetScreen(ScreenTypes.AnimalInfo);
+        AnimalInfo animalInfo = (AnimalInfo)UIManager.Instance.GetScreen(ScreenTypes.AnimalInfo);
         animalInfo.Init(birdConfigs[index]);
         UIManager.Instance.ShowScreen(ScreenTypes.AnimalInfo);
     }

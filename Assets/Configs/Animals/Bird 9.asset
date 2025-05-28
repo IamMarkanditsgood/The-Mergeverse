@@ -12,16 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
   m_Name: Bird 9
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 66aa37ee55a521544a6f58cd2f69de95, type: 3}
-  Name: Mara. I watched the skies
-  Description: "Everyone else looked down \u2014 for food, for shelter, for signs
-    of danger. But I always looked up. Maybe it was habit. Maybe it was denial. I
-    climbed water towers. Slept on rooftops. Counted stars through broken skylights.
-    The sky was the only thing that didn\u2019t fall apart. Sometimes I imagined
-    the clouds talking. Sometimes I thought I saw lights \u2014 but it was always
-    just my hope playing tricks. Still, I watched. Then one day, it wasn\u2019t a
-    trick. A red dot, moving fast. Not a bird. Not a storm. A plane. Your plane.
-    I set a flare, waved a mirror, screamed into the air. And for the first time,
-    something screamed back \u2014 the engine as you turned around. Now I sit here,
-    flying with the very sky I trusted. I still look up. But this time, there\u2019s
-    metal beneath me. And people beside me. "
+  image: {fileID: 21300000, guid: 6596ab029da1b0e48a5bbe4a44af9a80, type: 3}
+  Name: Peachy Sunset Cream
+  Ingredients: "1 ripe peach, peeled and chopped \L1/2 cup vanilla yogurt \L1 tsp
+    orange zest \L1 tsp honey "
+  Instructions: 'Blend peach with yogurt, honey, and zest until smooth. Chill for
+    10 minutes. Serve in a dessert glass with a curl of orange zest or a peach slice
+    on top. '

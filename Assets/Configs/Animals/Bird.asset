@@ -12,17 +12,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea71242f07137614e913d27bbddefd0c, type: 3}
   m_Name: Bird
   m_EditorClassIdentifier: 
-  image: {fileID: 21300000, guid: 75f4b17c59e139a439de385fc287bb63, type: 3}
-  Name: Rafael. I used to fix cars
-  Description: "I was a mechanic. Not a fancy one \u2014 just a guy with a garage,
-    a toolbox, and enough coffee to get through another busted carburetor. People
-    trusted me because I listened. And because I never overcharged them. When the
-    world fell apart, cars stopped running. Roads cracked, cities collapsed. But
-    engines\u2026 engines I understood. So I stayed. I kept fixing whatever I could
-    \u2014 generators, radios, wheels on carts. I didn\u2019t care if it ran on gas
-    or hope. One day a stranger limped into the village dragging a broken bike. I
-    fixed it. He told me about you \u2014 about planes, evacuations, survival. And
-    for the first time in years, I thought: maybe it\u2019s not too late for me either.
-    Now I\u2019m on your plane. Looking at the bolts, the rivets, the wear in the
-    metal. This thing flies because someone believed it could. And maybe that\u2019s
-    all I needed too. Thanks for fixing more than just machines. "
+  image: {fileID: 21300000, guid: e04efcd49cf003f41bc2d93941aa730d, type: 3}
+  Name: 'Glowberry Sparkle Smoothie '
+  Ingredients: "1/2 cup frozen blueberries   \L1/4 cup frozen pineapple chunks  
+    \L1/2 banana   \L1 tsp chia seeds (adds the \u201Csparkle\u201D)   \L1/2 tsp
+    edible glitter (optional for magic effect)   \L1/2 cup vanilla almond milk  
+    \L1 tbsp marshmallow fluff (or vegan alternative) "
+  Instructions: "Blend blueberries, pineapple, banana, and almond milk until smooth. 
+    \LAdd chia seeds and fluff, blend again for 10 seconds.   \LPour into a clear
+    glass \u2014 sprinkle edible glitter on top if desired.  \LServe with a swirl
+    straw and a berry on the rim. Glow not included\u2026 unless you smile! "

@@ -7,5 +7,6 @@ public class BirdConfig : ScriptableObject
 {
     public Sprite image;
     public string Name;
-    public string Description;
+    public string Ingredients;
+    public string Instructions;
 }

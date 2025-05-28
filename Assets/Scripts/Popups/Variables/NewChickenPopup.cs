@@ -31,7 +31,7 @@ public class NewChickenPopup : BasicPopup
             chickens[1].sprite = closedChickens[_level ];
             chickens[2].sprite = closedChickens[_level +1];
         }
-        else if(_level == 11)
+        else if(_level == 10)
         {
             chickens[0].sprite = openedChickens[_level -3];
             chickens[1].sprite = openedChickens[_level -2];
